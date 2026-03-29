@@ -15,12 +15,6 @@ interface NotesFormValues {
   tag: NoteTag;
 }
 
-const initialValues: NotesFormValues = {
-  title: "",
-  content: "",
-  tag: "Todo" as NoteTag,
-};
-
 type NoteFormErrors = Partial<Record<keyof NotesFormValues, string>>;
 
 const NotesSchema = Yup.object().shape({
