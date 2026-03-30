@@ -106,13 +106,13 @@ export default function NoteForm() {
 
       <div className={css.formGroup}>
         <label htmlFor="content">Content</label>
-        <input
+        <textarea
           id="content"
           name="content"
           className={css.textarea}
           defaultValue={draft?.content}
           onChange={handelChange}
-        />
+        ></textarea>
         {errors.content && <p className={css.error}>{errors.content}</p>}
       </div>
 
